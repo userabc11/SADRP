@@ -76,7 +76,7 @@ if __name__ == '__main__':
     state_dict = torch.load("/zoo/model.pth", map_location=device)
 
     # load model
-    model = Grammy(args, 21, 11).to(device)
+    model = GramDRP(args, 21, 11).to(device)
     model.load_state_dict(state_dict)
     criterion = ComboLoss()
 

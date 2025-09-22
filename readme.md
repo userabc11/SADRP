@@ -40,7 +40,7 @@ pip install pickle
 ## Project structure
 The structure of Grammy
 ```bash
-Grammy
+GramDRP
    |-----outputs  # back up and train log
    |-----data_process
    |          |--------data  # download here
@@ -66,7 +66,7 @@ The data cleaning and alignment logic is implemented in `data_process/loadData.p
 This script is **automatically invoked** during the train process, so you do not need to run it manually.  
 
 <p align="center">
-  <img src="./pic/pic3.png" alt="load data" width="400"/>
+  <img src="./pic/pic4.png" alt="load data" width="400"/>
 </p>
 
 ```bash
@@ -121,6 +121,7 @@ train_loader, val_loader, test_loader, _, num_node_features, num_edge_features, 
  bliu@bliulab.net
 shujialiu418@gmail.com
 ```
+
 
 
 

@@ -341,7 +341,7 @@ class GraphFpLin(nn.Module):
         return out + out1
 
 
-class Grammy(nn.Module):
+class GramDRP(nn.Module):
     def __init__(self, args, num_node_features, num_edge_features):
         """
         :param num_layers: number of Graphormer layers
@@ -521,4 +521,5 @@ edge_index = torch.tensor(
 
 model = SpatialEncodingPlus(4)
 spatial_matrix = model(edge_index, 5)
+
 """

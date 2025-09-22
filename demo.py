@@ -4,7 +4,7 @@ from torch_geometric.loader import DataLoader
 from tqdm import tqdm, trange
 import torch.nn as nn
 from utils import *
-from model import Grammy
+from model import GramDRP
 from parameter import parse_args, IOStream
 
 

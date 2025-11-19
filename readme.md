@@ -1,15 +1,15 @@
 # GramDRP
-A Graphomer-based Multi-modal Modeling Strategy for Cancer Drug Response (CDR) Prediction
+We present GramDRP, a Graphormer-based multi-modal framework for CDR prediction. GramDRP incorporates shortest distance path (SDP) and edge encodings into the attention mechanism to capture spatial and chemical features of drugs, while a multi-view interactive encoder integrates gene expression and DNA methylation data to model inter-omics relationships. On multiple benchmark datasets, GramDRP consistently outperforms state-of-the-art methods in root mean square error (RMSE), Pearson correlation, and Spearman’s rank correlation. 
 
 ## Model Structure
 
 <p align="center">
-  <img src="./pic/pic1.png" alt="GramDRP Architecture" width="800"/>
+  <img src="./pic/pic5.png" alt="GramDRP Architecture" width="800"/>
 </p>
 <p align="center"><em>Figure 1: The overall architecture of GramDRP</em></p>
 
 <p align="center">
-  <img src="./pic/pic2.png" alt="SOLL Structure" width="800"/>
+  <img src="./pic/pic6.png" alt="SOLL Structure" width="800"/>
 </p>
 <p align="center"><em>Figure 2: The structure of SOLL module.</em></p>
 
@@ -121,6 +121,7 @@ train_loader, val_loader, test_loader, _, num_node_features, num_edge_features, 
  bliu@bliulab.net
 shujialiu418@gmail.com
 ```
+
 
 
 

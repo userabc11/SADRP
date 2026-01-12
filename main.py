@@ -5,7 +5,7 @@ from tqdm import tqdm, trange
 import torch.nn as nn
 from utils import *
 from data import loadDrugCellData, getDrugBldDataLoader, loadExitAndNanDrugCellData, getCellBldDataLoader
-from model import GramDRP
+from model import SADRP
 from parameter import parse_args, IOStream, table_printer
 from collections import defaultdict
 
@@ -309,7 +309,7 @@ def main(args):
     #     = loadExitAndNanDrugCellData(args, "save", "single")
 
     # model
-    model = GramDRP(args, num_node_features, num_edge_features)
+    model = SADRP(args, num_node_features, num_edge_features)
     if TRAIN_FROM_CHEKPOINT:
         state_dict = torch.load(model_path, map_location=device)
         model.load_state_dict(state_dict)

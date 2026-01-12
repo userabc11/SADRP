@@ -1,12 +1,12 @@
-# GramDRP
-We present GramDRP, a Graphormer-based multi-modal framework for CDR prediction. GramDRP incorporates shortest distance path (SDP) and edge encodings into the attention mechanism to capture spatial and chemical features of drugs, while a multi-view interactive encoder integrates gene expression and DNA methylation data to model inter-omics relationships. On multiple benchmark datasets, GramDRP consistently outperforms state-of-the-art methods in root mean square error (RMSE), Pearson correlation, and Spearman’s rank correlation. 
+# SADRP
+Predicting drug sensitivity across diverse cancer samples  is a fundamental challenge in personalized therapy and drug discovery. This task requires comprehensive characterization of both drug and cancer cell line features. Current approaches often fail to fully capture the complex  structural characteristics interactions of drug compounds   and struggle to effectively integrate multi-omics features derived from the same sample  , limiting their feature representation capacity. Consequently, there is a need for modeling frameworks that can jointly model molecular structural features and multi-modal cellular contexts in a unified manner.  We present SADRP, a structurally  aware multi-modal framework for drug response prediction, designed to model complex molecular structures and multi-omics data. For drug representation, SADRP incorporates Shortest Distance Path (SDP) encoding and edge encoding to capture both topological relationships and bond-type chemical semantics. For cell line profiling, a multi-view interactive encoder integrates gene expression and DNA methylation, effectively capturing cross-omics synergistic complementarity. SADRP consistently outperforms state-of-the-art methods, while also identifying potential therapeutic candidates and potential biomarkers, providing mechanistic insights and supporting applications in drug discovery and personalized medicine.
 
 ## Model Structure
 
 <p align="center">
-  <img src="./pic/pic5.png" alt="GramDRP Architecture" width="800"/>
+  <img src="./pic/pic5.png" alt="SADRP Architecture" width="800"/>
 </p>
-<p align="center"><em>Figure 1: The overall architecture of GramDRP</em></p>
+<p align="center"><em>Figure 1: The overall architecture of SADRP</em></p>
 
 <p align="center">
   <img src="./pic/pic6.png" alt="SOLL Structure" width="800"/>
@@ -14,7 +14,7 @@ We present GramDRP, a Graphormer-based multi-modal framework for CDR prediction.
 <p align="center"><em>Figure 2: The structure of SOLL module.</em></p>
 
 ## 🔧 Dependencies
-The following packages are required to run GramDRP:
+The following packages are required to run SADRP:
 ```bash
 # Python version
 Python >= 3.10
@@ -38,9 +38,9 @@ pip install pickle
 ```
 
 ## Project structure
-The structure of GramDRP
+The structure of SADRP
 ```bash
-GramDRP
+SADRP
    |-----outputs  # back up and train log
    |-----data_process
    |          |--------data  # download here

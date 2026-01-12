@@ -341,7 +341,7 @@ class GraphFpLin(nn.Module):
         return out + out1
 
 
-class GramDRP(nn.Module):
+class SADRP(nn.Module):
     def __init__(self, args, num_node_features, num_edge_features):
         """
         :param num_layers: number of Graphormer layers
